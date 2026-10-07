@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.better-spotify"
+          path="/org/gnome/shell/extensions/better-spotify/">
+
+    <key name="panel-position" type="s">
+      <choices>
+        <choice value="left"/>
+        <choice value="center"/>
+        <choice value="right"/>
+      </choices>
+      <default>"right"</default>
+      <summary>Top bar section for the indicator</summary>
+    </key>
+
+    <key name="panel-index" type="i">
+      <range min="0" max="30"/>
+      <default>0</default>
+      <summary>Position within the section (0 = leftmost)</summary>
+    </key>
+
+    <key name="panel-title-mode" type="s">
+      <choices>
+        <choice value="none"/>
+        <choice value="title"/>
+        <choice value="artist"/>
+        <choice value="both"/>
+      </choices>
+      <default>"both"</default>
+      <summary>Deprecated (replaced by panel-show-*), kept for sessions still running the old code</summary>
+    </key>
+
+    <key name="panel-show-icon" type="b">
+      <default>true</default>
+      <summary>Show the icon in the panel (always shown when no track is playing)</summary>
+    </key>
+
+    <key name="panel-show-title" type="b">
+      <default>true</default>
+      <summary>Show the track title in the panel</summary>
+    </key>
+
+    <key name="panel-show-artist" type="b">
+      <default>true</default>
+      <summary>Show the artist in the panel</summary>
+    </key>
+
+    <key name="launch-on-click" type="b">
+      <default>true</default>
+      <summary>Launch Spotify when clicking the icon if it's not running</summary>
+    </key>
+
+    <key name="lyrics-visible" type="b">
+      <default>false</default>
+      <summary>Deprecated (lyrics removed) — to be deleted after reconnection</summary>
+    </key>
+
+    <key name="lyrics-on-top" type="b">
+      <default>true</default>
+      <summary>Keep lyrics window always on top</summary>
+    </key>
+
+    <key name="lyrics-x" type="i">
+      <default>-1</default>
+      <summary>Lyrics window X position (-1 = automatic)</summary>
+    </key>
+
+    <key name="lyrics-y" type="i">
+      <default>-1</default>
+      <summary>Lyrics window Y position (-1 = automatic)</summary>
+    </key>
+
+    <key name="lyrics-font-size" type="i">
+      <range min="8" max="40"/>
+      <default>14</default>
+      <summary>Lyrics text size (pt)</summary>
+    </key>
+
+
+    <key name="toggle-lyrics-shortcut" type="as">
+      <default><![CDATA[['<Super><Alt>l']]]></default>
+      <summary>Keyboard shortcut to toggle lyrics</summary>
+    </key>
+
+  </schema>
+</schemalist>

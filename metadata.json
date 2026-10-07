@@ -1,0 +1,9 @@
+{
+  "name": "Better Spotify",
+  "description": "Control Spotify from the top bar (playback, volume, shuffle, repeat).",
+  "uuid": "betterSpotify@lucipher-lab.fr",
+  "settings-schema": "org.gnome.shell.extensions.better-spotify",
+  "shell-version": [
+    "50"
+  ]
+}

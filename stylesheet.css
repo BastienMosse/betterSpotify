@@ -1,0 +1,63 @@
+/* Better Spotify — styles (St CSS syntax, a subset of web CSS) */
+
+/* ── Top bar ──────────────────────────────────────────────────── */
+.better-spotify-panel-label {
+  max-width: 260px;
+  padding-left: 4px;
+}
+
+/* ── Menu ─────────────────────────────────────────────────────── */
+.better-spotify-menu {
+  min-width: 340px;
+}
+
+.better-spotify-track {
+  spacing: 12px;
+}
+
+.better-spotify-cover {
+  border-radius: 8px;
+}
+
+.better-spotify-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.better-spotify-artist {
+  font-size: 0.95em;
+}
+
+.better-spotify-album,
+.better-spotify-time {
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.better-spotify-volume {
+  spacing: 8px;
+}
+
+.better-spotify-controls BoxLayout {
+  spacing: 10px;
+}
+
+/* Round buttons (play, shuffle, repeat…) */
+.better-spotify-control {
+  border-radius: 999px;
+  padding: 8px;
+}
+
+.better-spotify-control.big {
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.better-spotify-control:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* :checked = active toggle (shuffle, repeat) */
+.better-spotify-control:checked {
+  color: #1ed760;
+}
